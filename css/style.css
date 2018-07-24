@@ -1,9 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Arial", sans-serif;
+    color: #292828;
+  
+    background-color: white;
+  }
 .page-header {
     padding: 10px;
-    background-color: #eeeeee;
+    background-color: #177cff;
 }
 
 .page-footer {
     padding: 10px;
-    background-color: #eeeeee;
+    background-color: #177cff;
 }
+.main-nav {
+    list-style: none;
+  }
+  
+  .main-nav li {
+    text-transform: uppercase;
+  }
+  
+  .main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .main-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .main-nav a:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .promo {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    font-family: "Georgia", sans-serif;
+    text-align: center;
+  }
+  
+  .promo a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .features ul {
+    list-style: none;
+  }
+  
+  .feature-item {
+    padding-top: 90px;
+  
+    text-align: center;
+  
+    border-left: 1px solid #177cff;
+  }
+  
+  .feature-item:first-child {
+    border-left: none;
+  }
+  
+  .feature-choice {
+    background: url("../img/choice.png") top center no-repeat ;
+  }
+  
+  .feature-design {
+    background: url("../img/design.png") top center no-repeat;
+  }
+  
+  .feature-individual {
+    background: url("../img/individual.png") top center no-repeat;
+  }
+  
+  .feature-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "Arial", sans-serif;
+    color: #177cff;
+  }
+  
+  .feature-item p {
+    font-size: 16px;
+  }
