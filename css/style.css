@@ -24,6 +24,7 @@ body {
   
   .main-nav li {
     text-transform: uppercase;
+    display: inline-block;
   }
   
   .main-nav a {
@@ -34,6 +35,10 @@ body {
   .main-nav a:hover {
     text-decoration: underline;
   }
+  .header-logo{
+    display: inline;
+  }
+  
   
   .main-nav a:active {
     color: rgba(255, 255, 255, 0.3);
@@ -59,16 +64,18 @@ body {
     padding-top: 90px;
   
     text-align: center;
-  
+    display: inline-block;
+    width: 30%;
     border-left: 1px solid #2B7FB3;
   }
   
   .feature-item:first-child {
     border-left: none;
+    
   }
   
   .feature-choice {
-    background: url("../img/choice.png") top center no-repeat ;
+    background: url("../img/choice.png") top center no-repeat;
   }
   
   .feature-design {
