@@ -155,6 +155,38 @@ body {
     font-size: 16px;
   }
 
+  .portfolio{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+  }
+  .portfolio-item{
+    width: 850px;
+  }
+  .portfolio-left{
+    width: 300px;
+    float: left;
+    padding-left: 100px;
+    
+  }
+  .portfolio h3{
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+  .portfolio-right{
+    float: right;
+   padding:0;
+   margin:0;
+    margin-top: 20px;
+  }
+  .portfolio-right img{
+    width: 400px;
+  }
   .page-footer {
     margin-top: 20px;
   }
