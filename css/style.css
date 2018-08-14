@@ -21,13 +21,13 @@ body {
 }
   .page-header {
     padding: 10px;
-    background: linear-gradient(to bottom, #4788c7,#5ba2dd) ;
+    background: linear-gradient(to bottom, rgb(0,152,231),rgb(2,188,255)) ;
     min-width: 950px;
 }
 /* #b0d2ff */
 .page-footer {
     padding: 10px;
-    background: linear-gradient(to top,   #4788c7,#5ba2dd) ;
+    background: linear-gradient(to top, rgb(0,152,231),rgb(2,188,255)) ;
     min-width: 950px;
 }
 
