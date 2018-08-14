@@ -8,8 +8,18 @@ body {
     color: #292828;
   
     background-color: white;
-  }
-.page-header {
+}
+  .container {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  .page-header {
     padding: 10px;
     background: linear-gradient(to bottom, #2B7FB3,rgb(66, 184, 219) ) ;
 }
@@ -18,15 +28,29 @@ body {
     padding: 10px;
     background: linear-gradient(to top, #2B7FB3,rgb(66, 184, 219) ) ;
 }
+
+.header-logo {
+  float: left;
+  width: 205px;
+  height: 55px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
 .main-nav {
-    list-style: none;
-  }
-  
-  .main-nav li {
-    text-transform: uppercase;
-    display: inline-block;
-  }
-  
+  float: left;
+  width: 520px;
+  margin: 0;
+  margin-top: 18px;
+  margin-left: 125px;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  float: left;
+  margin-right: 50px;
+  text-transform: uppercase;
+}
   .main-nav a {
     color: #ffffff;
     text-decoration: none;
@@ -44,35 +68,61 @@ body {
     color: rgba(255, 255, 255, 0.3);
   }
   
-  .promo {
-    font-weight: bold;
+  .promo{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+  }
+  .promo-left{
+    width: 400px;
+    float: left;
+    padding-left: 50px;
+  }
+  .promo h3{
     font-size: 28px;
     line-height: 35px;
-    font-family: "Georgia", sans-serif;
-    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-align: left;
   }
-  
+  .promo-right{
+    width: 400px;
+    float: right;
+    padding-right: 100px;
+  }
+  .promo-right img{
+    width: 500px;
+  }
   .promo a {
     color: #ffffff;
     text-decoration: none;
   }
-  .features ul {
+  .features {
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+
+.features ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
-  }
-  
-  .feature-item {
+}
+
+.feature-item {
+    position: relative;
+    float: left;
+    width: 279px;
     padding-top: 90px;
-  
+    padding-right: 30px;
+    padding-left: 30px;
     text-align: center;
-    display: inline-block;
-    width: 30%;
-    border-left: 1px solid #2B7FB3;
-  }
-  
-  .feature-item:first-child {
-    border-left: none;
-    
-  }
+    border-left: 1px solid #d9d9d9;
+}
+
+.feature-item:first-child {
+    border-left-color: transparent;
+}
   
   .feature-choice {
     background: url("../img/choice.png") top center no-repeat;
