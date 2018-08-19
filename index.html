@@ -5,10 +5,22 @@
   <meta charset="utf-8">
   <title>Портфолио Krispo95</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="libs/fullpage/jquery.easings.min.js"></script>
+<script src="libs/fullpage/scrolloverflow.min.js"></script>
+<script src="libs/fullpage/jquery.fullPage.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+});  
+</script>
+<link href="libs/fullpage/jquery.fullPage.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="page-header">
+  <div id="fullpage">
+  <section class="section"></section>
+    <div class="page-header">
       <div class="container">
     <div class="header-top clearfix">
       <div class="header-logo">
@@ -31,15 +43,16 @@
           удобных сайтов с адаптивной версткой</p></a>
       </div>
       <div class="promo-right">
-        <img src="img/sozdanie-saytov.png">
+        <img src="img/icon.svg">
       </div>
     </div>
 
     </div>
   </div>
+</section>
 
-
-  <div class="features">
+<section class="section">
+  <div class="features section">
     <div class="container">
     <ul class="clearfix">
       <li class="feature-item feature-choice">
@@ -57,8 +70,9 @@
       </li>
     </ul></div>
   </div>
+</section>
 
-
+<section class="section">
   <div class="portfolio">
     <h3>Последние работы</h3>
     <div class="container">
@@ -108,7 +122,8 @@
       </div>
     </div>
   </div> 
-
+</div>
+</section>
 </body>
 
 </html>
