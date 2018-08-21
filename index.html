@@ -5,125 +5,134 @@
   <meta charset="utf-8">
   <title>Портфолио Krispo95</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="libs/fullpage/jquery.easings.min.js"></script>
-<script src="libs/fullpage/scrolloverflow.min.js"></script>
-<script src="libs/fullpage/jquery.fullPage.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('#fullpage').fullpage();
-});  
-</script>
-<link href="libs/fullpage/jquery.fullPage.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/fullPage.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/fullPage.css" />
+  <script>
+  jQuery(document).ready(function($) {
+    $("#fullpage").fullpage({
+   });
+   })
+   </script>
 </head>
 
 <body>
   <div id="fullpage">
-  <section class="section"></section>
-    <div class="page-header">
+    <section class="section">
+      <div class="header-menu">
+        <div class="container">
+          <div class="header-top clearfix">
+            <div class="header-logo">
+              <img src="img/krispo.png" alt="Krispo95" width="150">
+            </div>
+            <ul class="main-nav">
+              <li>
+                <a href="#">О себе</a>
+              </li>
+              <li>
+                <a href="#">Портфолио</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-header">
+          <div class="container">
+        <div class="promo clearfix">
+          <div class="promo-left">
+
+            <h3>Сайт - портфолио начинающего фронтенд-разработчика.</h3>
+            <a href="#">
+              <p>Добро пожаловать!
+                <br>Я - Кристина "KRISPO" Погосян. Специализируюсь на Frontend дизайне для WEB. Занимаюсь созданием удобных сайтов
+                с адаптивной версткой</p>
+            </a>
+          </div>
+          <div class="promo-right">
+            <img src="img/icon.svg">
+          </div>
+        </div>
+
+      </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <div class="features section">
       <div class="container">
-    <div class="header-top clearfix">
-      <div class="header-logo">
-        <img src="img/krispo.png" alt="Krispo95" width="150">
-      </div>
-      <ul class="main-nav">
-        <li>
-          <a href="#">О себе</a>
-        </li>
-        <li>
-          <a href="#">Портфолио</a>
-        </li>
-      </ul>
-    </div>
-    <div class="promo clearfix">
-      <div class="promo-left">
-        
-          <h3>Сайт - портфолио начинающего фронтенд-разработчика.</h3>
-          <a href="#"><p>Добро пожаловать! <br>Я - Кристина "KRISPO" Погосян. Специализируюсь на Frontend дизайне для WEB. Занимаюсь созданием
-          удобных сайтов с адаптивной версткой</p></a>
-      </div>
-      <div class="promo-right">
-        <img src="img/icon.svg">
-      </div>
-    </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="features section">
-    <div class="container">
-    <ul class="clearfix">
-      <li class="feature-item feature-choice">
-        <h2 class="feature-title">Выбор</h2>
-        <p>Выбрав меня, вы оцените качество и скорость выполнения работы.</p>
-      </li>
-      <li class="feature-item feature-design">
-        <h2 class="feature-title">Современность</h2>
-        <p>Мы создадим современный веб-дизайн сайта, который привлечет больше клиентов.</p>
-      </li>
-      <li class="feature-item feature-individual">
-        <h2 class="feature-title">Неповторимость</h2>
-        <p> Каждый клиент получит свой собственный неповторимый проект.
-        </p>
-      </li>
-    </ul></div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="portfolio">
-    <h3>Последние работы</h3>
-    <div class="container">
-    <div class="portfolio-item clearfix">
-        <div class="portfolio-left">
-          
-            <h3>Сайт - портфолио.</h3>
-            <p>Моей первой работой является создание сайта-портфолио. На данный момент это единственный экземпляр данного списка.</p>
-        </div>
-        <div class="portfolio-right">
-          <img src="img/mac2.png">
-        </div>
-      </div> 
-    </div>
-  </div>
-
-  <div class="page-footer">
-    <div class="footer-top">
-      <div class="footer-logo">
-        <img src="img/krispo.png" alt="Krispo95" width="150">
-      </div>
-    </div>
-
-    <div class="footer-middle">
-      <div class="footer-menu">
-        <ul>
-          <li>
-            <a href="#">О себе</a>
+        <ul class="clearfix">
+          <li class="feature-item feature-choice">
+            <h2 class="feature-title">Выбор</h2>
+            <p>Выбрав меня, вы оцените качество и скорость выполнения работы.</p>
           </li>
-          <li>
-            <a href="#">Портфолио</a>
+          <li class="feature-item feature-design">
+            <h2 class="feature-title">Современность</h2>
+            <p>Мы создадим современный веб-дизайн сайта, который привлечет больше клиентов.</p>
+          </li>
+          <li class="feature-item feature-individual">
+            <h2 class="feature-title">Неповторимость</h2>
+            <p> Каждый клиент получит свой собственный неповторимый проект.
+            </p>
           </li>
         </ul>
       </div>
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <div class="footer-social">
-        <b>Давайте дружить!</b>
-        <a class="social-btn" href="#">Вконтакте</a>
-        <a class="social-btn" href="#">Фейсбук</a>
-      </div>
+  <section class="section">
+    <div class="portfolio">
+      <h3>Последние работы</h3>
+      <div class="container">
+        <div class="portfolio-item clearfix">
+          <div class="portfolio-left">
 
-      <div class="footer-copyright">
-        С
-        <span class="heart">любовью</span> для будущих заказчиков.
+            <h3>Сайт - портфолио.</h3>
+            <p>Моей первой работой является создание сайта-портфолио. На данный момент это единственный экземпляр данного списка.
+            </p>
+          </div>
+          <div class="portfolio-right">
+            <img src="img/mac2.png">
+          </div>
+        </div>
       </div>
     </div>
-  </div> 
-</div>
-</section>
+
+    <div class="page-footer">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="img/krispo.png" alt="Krispo95" width="150">
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <div class="footer-menu">
+          <ul>
+            <li>
+              <a href="#">О себе</a>
+            </li>
+            <li>
+              <a href="#">Портфолио</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <b>Давайте дружить!</b>
+          <a class="social-btn" href="#">Вконтакте</a>
+          <a class="social-btn" href="#">Фейсбук</a>
+        </div>
+
+        <div class="footer-copyright">
+          С
+          <span class="heart">любовью</span> для будущих заказчиков.
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
 </body>
 
 </html>
