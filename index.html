@@ -8,12 +8,34 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/fullpage.js"></script>
   <link rel="stylesheet" type="text/css" href="css/fullPage.css" />
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <link rel="stylesheet" href="css/animate.css">
+  <script type="text/javascript" src="js/wow.min.js"></script>
+
   <script>
-  jQuery(document).ready(function($) {
-    $("#fullpage").fullpage({
-   licenseKey:'OPEN-SOURCE-GPLV3-LICENSE'});
-   })
-   </script>
+
+    jQuery(document).ready(function ($) {
+      var fullpage = $("#fullpage")
+      fullpage.fullpage({
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+        onLeave: function (index, direction) {
+          //alert("Kristina is good!");
+          console.log(index);
+          var $isAnimatedLeft = $('#left');
+          var $isAnimatedCenter = $('#center');
+          var $isAnimatedRight = $('#right');
+
+          if (index.index == 0) {
+            $isAnimatedLeft.addClass('animated fadeInLeftBig');
+            $isAnimatedCenter.addClass('animated fadeInUpBig');
+            $isAnimatedRight.addClass('animated fadeInRightBig');
+            // $isAnimatedSecond.eq(0).css('animation-delay', '.3s');
+          }
+        }
+      });
+    })
+  </script>
 </head>
 
 <body>
@@ -23,7 +45,7 @@
         <div class="container">
           <div class="header-top clearfix">
             <div class="header-logo">
-              <img src="img/krispo1.png" alt="Krispo95" width="150">
+              <img id="lovetitle" src="img/krispo1.png" alt="Krispo95" width="150">
             </div>
             <ul class="main-nav">
               <li>
@@ -37,101 +59,115 @@
         </div>
       </div>
       <div class="page-header">
-          <div class="container">
-        <div class="promo clearfix">
-          <div class="promo-left">
+        <div class="container">
+          <div class="promo clearfix">
+            <div class="promo-left">
 
-            <h3>Сайт - портфолио начинающего фронтенд-разработчика.</h3>
-            <a href="#">
-              <p>Добро пожаловать!
-                <br>Я - Кристина "KRISPO" Погосян. Специализируюсь на Frontend дизайне для WEB. Занимаюсь созданием удобных сайтов
-                с адаптивной версткой</p>
-            </a>
+              <h3>Сайт - портфолио начинающего фронтенд-разработчика.</h3>
+              <a href="#">
+                <p>Добро пожаловать!
+                  <br>Я - Кристина "KRISPO" Погосян. Специализируюсь на Frontend дизайне для WEB. Занимаюсь созданием удобных
+                  сайтов с адаптивной версткой</p>
+              </a>
+            </div>
+            <div class="promo-right">
+              <img src="img/icon.svg">
+            </div>
           </div>
-          <div class="promo-right">
-            <img src="img/icon.svg">
-          </div>
-        </div>
 
-      </div>
-  </div>
-  </section>
-
-  <section class="section">
-    <div class="features section">
-      <div class="container">
-        <ul class="clearfix">
-          <li class="feature-item feature-choice">
-            <h2 class="feature-title">Выбор</h2>
-            <p>Выбрав меня, вы оцените качество и скорость выполнения работы.</p>
-          </li>
-          <li class="feature-item feature-design">
-            <h2 class="feature-title">Современность</h2>
-            <p>Мы создадим современный веб-дизайн сайта, который привлечет больше клиентов.</p>
-          </li>
-          <li class="feature-item feature-individual">
-            <h2 class="feature-title">Неповторимость</h2>
-            <p> Каждый клиент получит свой собственный неповторимый проект.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="portfolio">
-      <h3>Последние работы</h3>
-      <div class="container">
-        <div class="portfolio-item clearfix">
-          <div class="portfolio-left">
-
-            <h3>Сайт - портфолио.</h3>
-            <p>Моей первой работой является создание сайта-портфолио. На данный момент это единственный экземпляр данного списка.
-            </p>
-          </div>
-          <div class="portfolio-right">
-            <img src="img/mac2.png">
-          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="page-footer">
-      <div class="footer-top">
-        <div class="footer-logo">
-          <img src="img/krispo.png" alt="Krispo95" width="150">
-        </div>
-      </div>
-
-      <div class="footer-middle">
-        <div class="footer-menu">
-          <ul>
-            <li>
-              <a href="#">О себе</a>
+    <section class="section">
+      <div class="features">
+        <div class="container">
+          <ul class="clearfix">
+            <!-- <li id="slideRight" class="slideRight feature-item feature-choice"> -->
+            <li id="left" class="is-animated feature-item feature-choice">
+              <h2 class="feature-title">Выбор</h2>
+              <p>Выбрав меня, вы оцените качество и скорость выполнения работы.</p>
             </li>
-            <li>
-              <a href="#">Портфолио</a>
+            <li id="center" class="feature-item feature-design">
+              <h2 class="feature-title">Современность</h2>
+              <p>Мы создадим современный веб-дизайн сайта, который привлечет больше клиентов.</p>
+            </li>
+            <li id="right" class="feature-item feature-individual">
+              <h2 class="feature-title">Неповторимость</h2>
+              <p> Каждый клиент получит свой собственный неповторимый проект.
+              </p>
             </li>
           </ul>
         </div>
       </div>
+    </section>
 
-      <div class="footer-bottom">
-        <div class="footer-social">
-          <b>Давайте дружить!</b>
-          <a class="social-btn" href="#">Вконтакте</a>
-          <a class="social-btn" href="#">Фейсбук</a>
-        </div>
+    <section class="section" id="section2">
+      <div class="portfolio">
+        <h3>Последние работы</h3>
+        <div class="container">
+          <div class="portfolio-item clearfix">
+            <div class="portfolio-left">
 
-        <div class="footer-copyright">
-          С
-          <span class="heart">любовью</span> для будущих заказчиков.
+              <h3>Сайт - портфолио.</h3>
+              <p>Моей первой работой является создание сайта-портфолио. На данный момент это единственный экземпляр данного
+                списка.
+              </p>
+            </div>
+            <div class="portfolio-right">
+              <img src="img/mac2.png">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+
+      <div class="page-footer">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="img/krispo.png" alt="Krispo95" width="150">
+          </div>
+        </div>
+
+        <div class="footer-middle">
+          <div class="footer-menu">
+            <ul>
+              <li>
+                <a href="#">О себе</a>
+              </li>
+              <li>
+                <a href="#">Портфолио</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <b>Давайте дружить!</b>
+            <a class="social-btn" href="#">Вконтакте</a>
+            <a class="social-btn" href="#">Фейсбук</a>
+          </div>
+
+          <div class="footer-copyright">
+            С
+            <span class="heart">любовью</span> для будущих заказчиков.
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+
+  <script>
+    // var obj = $('#lovetitle');
+
+    // console.log(obj);
+    // //console.log(getComputedStyle(obj));
+
+    // setTimeout(function () {
+    //   obj.addClass('animated fadeInUpBig')
+    // }, 2000);
+
+  </script>
 
 </body>
 

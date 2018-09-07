@@ -126,9 +126,42 @@ body {
     color: #ffffff;
     text-decoration: none;
   }
+
+  .slideRight{
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight; 
+ 
+    animation-duration: 2s; 
+    -webkit-animation-duration: 2s;
+ 
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+ 
+    visibility: visible !important; 
+}
+ 
+@keyframes slideRight {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0%);
+    }   
+}
+ 
+@-webkit-keyframes slideRight {
+    0% {
+        -webkit-transform: translateX(-150%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
   .features {
     padding-top: 100px;
     padding-bottom: 55px;
+    height: 100vh;
+    background: url(../img/fon3.jpg) no-repeat 0 0;
 }
 
 .features ul {
@@ -136,11 +169,14 @@ body {
     padding: 0;
     list-style: none;
 }
-
+h2.feature-title{
+  color: white;
+}
 .feature-item {
     position: relative;
     float: left;
     width: 240px;
+    color: white;
     padding-top: 90px;
     padding-right: 30px;
     padding-left: 30px;
@@ -156,16 +192,38 @@ body {
     margin-left: 10px;
 }
   
- /* .feature-choice {
+ .feature-choice::after {
     background: url("../img/choice.png") top center no-repeat;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+
   }
   
-  .feature-design {
+  .feature-design::after {
     background: url("../img/design.png") top center no-repeat;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 100%;
   }
   
-  .feature-individual {
+  .feature-individual::after {
     background: url("../img/individual.png") top center no-repeat;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 100%;
   }*/
   
   .feature-title {
@@ -274,3 +332,10 @@ body {
     color: rgba(255, 255, 255, 0.3);
   }
   
+  #section2 img {
+    left:130%;
+    position:relative;
+   }
+   #section2 p, #section2 h1{
+    display:none;
+   }
