@@ -127,36 +127,6 @@ body {
     text-decoration: none;
   }
 
-  .slideRight{
-    animation-name: slideRight;
-    -webkit-animation-name: slideRight; 
- 
-    animation-duration: 2s; 
-    -webkit-animation-duration: 2s;
- 
-    animation-timing-function: ease-in-out; 
-    -webkit-animation-timing-function: ease-in-out;     
- 
-    visibility: visible !important; 
-}
- 
-@keyframes slideRight {
-    0% {
-        transform: translateX(-150%);
-    }
-    100% {
-        transform: translateX(0%);
-    }   
-}
- 
-@-webkit-keyframes slideRight {
-    0% {
-        -webkit-transform: translateX(-150%);
-    }
-    100% {
-        -webkit-transform: translateX(0%);
-    }
-}
   .features {
     padding-top: 100px;
     padding-bottom: 55px;
@@ -168,6 +138,7 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    
 }
 h2.feature-title{
   color: white;
@@ -183,12 +154,18 @@ h2.feature-title{
     text-align: center;
     border-radius: 5px;
     background:linear-gradient(to top, rgba(12, 75, 110, 0.9),rgba(229, 218, 173, 0.9) );
+    top: -40px;
 }
-
+.feature-bottom{
+  width: 860px;
+  margin-top: 20px;
+  padding-top:0;
+  height:150px;
+}
 .feature-item:first-child {
     margin-right: 10px;
 }
-.feature-item:last-child {
+.feature-item:nth-child(3) {
     margin-left: 10px;
 }
   
@@ -332,10 +309,4 @@ h2.feature-title{
     color: rgba(255, 255, 255, 0.3);
   }
   
-  #section2 img {
-    left:130%;
-    position:relative;
-   }
-   #section2 p, #section2 h1{
-    display:none;
-   }
+ 
