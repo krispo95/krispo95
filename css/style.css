@@ -95,7 +95,7 @@ body {
   
   .promo{
     font-size: 1.5rem;
-    line-height: 5vh;
+    line-height: 2rem;
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
     background:linear-gradient(to top, rgba(12, 75, 110, 0.9),rgba(229, 218, 173, 0.9) );
@@ -122,6 +122,8 @@ body {
   .promo-right img{
     width: 250px;
   }
+
+  
   .promo a {
     color: #ffffff;
     text-decoration: none;
@@ -161,6 +163,7 @@ h2.feature-title{
   margin-top: 20px;
   padding-top:0;
   height:150px;
+  background:linear-gradient(to bottom, rgba(12, 75, 110, 0.9),rgba(229, 218, 173, 0.9) );
 }
 .feature-item:first-child {
     margin-right: 10px;
@@ -215,6 +218,9 @@ h2.feature-title{
     font-size: 16px;
   }
 
+  .section3{
+    background-color: white;
+  }
   .portfolio{
     font-size: 20px;
     line-height: 30px;
@@ -309,4 +315,29 @@ h2.feature-title{
     color: rgba(255, 255, 255, 0.3);
   }
   
- 
+  #fp-nav ul li a span, 
+  .fp-slidesNav ul li a span {
+      background: white;
+      width: 8px;
+      height: 8px;
+      margin: -4px 0 0 -4px;
+  }
+        
+  #fp-nav ul li a.active span, 
+  .fp-slidesNav ul li a.active span, 
+  #fp-nav ul li:hover a.active span, 
+  .fp-slidesNav ul li:hover a.active span {
+      width: 16px;
+      height: 16px;
+      margin: -8px 0 0 -8px;
+      background: transparent;
+      box-sizing: border-box;
+      border: 1px solid #24221F;
+  }
+
+/* .image {
+color:#aac3b0 светло-серый
+#c3dbc9 светлый
+#258291 темный
+#8faa99 светлее
+}  */
