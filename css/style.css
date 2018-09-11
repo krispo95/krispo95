@@ -260,7 +260,7 @@ h2.feature-title{
       width: 100vw;
       margin-top: 20px;
       height: 130px; 
-      bottom: 0px; 
+      bottom:0px; 
   }
   
   
@@ -287,7 +287,6 @@ h2.feature-title{
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
-    color: #ffffff;
     display: inline-block;
     padding: 5px 10px;
   }
@@ -312,7 +311,7 @@ h2.feature-title{
   
   .footer-social{
     float: left;
-    width: 250px;
+    width: 450px;
     margin-left: 0;
   }
   .footer-social b {
@@ -379,6 +378,39 @@ h2.feature-title{
   background-size: 100%;
   margin-bottom: 7px;
 }
+.footer-social {
+  font-size: 0;
+}
+
+.footer-social b {
+  margin-right: 40px;
+  font-size: 24px;
+}
+.social-btn-li{
+    display: inline-block; 
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #ffffff;
+    background-image: url("../img/li.png");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    margin-top:-20px;
+  }  
+.social-btn-fb{
+    display: inline-block; 
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #ffffff;
+    background-image: url("../img/fb.png");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    margin-top:-20px;
+  }  
+  
 /* .image {
 color:#aac3b0 светло-серый
 #c3dbc9 светлый
