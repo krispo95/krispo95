@@ -254,7 +254,6 @@ h2.feature-title{
   }
   .page-footer {
       padding: 10px;
-      position: absolute;
       background: url("../img/fon3.jpg") no-repeat 100% 100% ;
       background-size: 100%;
       width: 100vw;
@@ -380,6 +379,7 @@ h2.feature-title{
 }
 .footer-social {
   font-size: 0;
+  margin-left: 55px;
 }
 
 .footer-social b {
@@ -396,7 +396,7 @@ h2.feature-title{
     background-image: url("../img/li.png");
     background-repeat: no-repeat;
     background-size: 100%; 
-    margin-top:-20px;
+    margin-top:-30px;
   }  
 .social-btn-fb{
     display: inline-block; 
@@ -408,12 +408,22 @@ h2.feature-title{
     background-image: url("../img/fb.png");
     background-repeat: no-repeat;
     background-size: 100%; 
-    margin-top:-20px;
+    margin-top:-30px;
   }  
-  
+  .social-btn-fb:hover{
+    background:  url("../img/fb1.png"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .social-btn-li:hover{
+    background:  url("../img/li1.png"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 /* .image {
 color:#aac3b0 светло-серый
 #c3dbc9 светлый
 #258291 темный
 #8faa99 светлее
+#0c4b6e fb li
 }  */
