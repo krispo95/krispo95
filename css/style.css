@@ -23,10 +23,8 @@ body {
     padding: 10px;
     background: url("../img/fon3.jpg") no-repeat ;
     background-size: 100%;
-    height:100%;
     min-width: 950px;
-    height: 100vh;
-    
+    height: 100vh;  
 }
 .container .page-header{
   height: 100vh;
@@ -227,6 +225,7 @@ h2.feature-title{
     padding: 10px 20px;
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
+    margin-bottom: 20vh;
   }
   .portfolio-item{
     width: 850px;
@@ -254,7 +253,14 @@ h2.feature-title{
     width: 400px;
   }
   .page-footer {
-    margin-top: 20px;
+      padding: 10px;
+      position: absolute;
+      background: url("../img/fon3.jpg") no-repeat 100% 100% ;
+      background-size: 100%;
+      width: 100vw;
+      margin-top: 20px;
+      height: 130px; 
+      bottom: 0px; 
   }
   
   
@@ -278,14 +284,10 @@ h2.feature-title{
     font-weight: bold;
   }
   .footer-menu a {
-    display: inline;
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
     text-decoration: none;
-  }
-  .footer-menu a {
     color: #ffffff;
-    text-decoration: none;
     display: inline-block;
     padding: 5px 10px;
   }
@@ -308,6 +310,11 @@ h2.feature-title{
     color: rgba(255, 255, 255, 0.3);
   }
   
+  .footer-social{
+    float: left;
+    width: 250px;
+    margin-left: 0;
+  }
   .footer-social b {
     font-size: 24px;
     font-family: "Georgia", serif;
@@ -326,6 +333,7 @@ h2.feature-title{
   
   .footer-copyright {
     color: #ffffff;
+    float: right;
     text-transform: uppercase;
   }
   
@@ -361,7 +369,16 @@ h2.feature-title{
       box-sizing: border-box;
       border: 1px solid #24221F;
   }
-
+.heart{
+  display: inline-block;
+    width: 27px;
+    height: 24px;
+    font-size: 0;
+    vertical-align: middle;
+  background-image: url("../img/love1.png");
+  background-size: 100%;
+  margin-bottom: 7px;
+}
 /* .image {
 color:#aac3b0 светло-серый
 #c3dbc9 светлый
