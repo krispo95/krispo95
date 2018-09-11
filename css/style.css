@@ -33,12 +33,7 @@ body {
  
 }
 /* #b0d2ff */
-.page-footer {
-    padding: 10px;
-    background: url("../img/fon3.jpg") no-repeat 100% 100% ;
-    background-size: 100%;
-    min-width: 950px;
-}
+
 .header-menu{
   height: 80px;
   position: fixed;
@@ -217,7 +212,9 @@ h2.feature-title{
   }
 
   .section3{
-    background-color: white;
+    background: url("../img/fon3.jpg") no-repeat ;
+    background-size: 100%;
+    min-width: 950px;
   }
   .portfolio{
     font-size: 20px;
@@ -225,10 +222,13 @@ h2.feature-title{
     padding: 10px 20px;
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
-    margin-bottom: 20vh;
   }
   .portfolio-item{
     width: 850px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 80px;
+    padding: 50px;
   }
   .portfolio-left{
     width: 300px;
@@ -254,17 +254,15 @@ h2.feature-title{
   }
   .page-footer {
       padding: 10px;
-      background: url("../img/fon3.jpg") no-repeat 100% 100% ;
-      background-size: 100%;
       width: 100vw;
       margin-top: 20px;
-      height: 130px; 
+      height: 120px; 
       bottom:0px; 
+    min-width: 950px;
   }
-  
-  
+ 
   .footer-menu{
-    float: right;
+    /* float: right; */
     width: 520px;
     margin: 0;
     margin-top: 18px;
@@ -272,6 +270,8 @@ h2.feature-title{
     padding: 0;
     list-style: none;
   }
+  
+
   .footer-menu ul {
     list-style: none;
   }
@@ -282,6 +282,14 @@ h2.feature-title{
     display: inline-block;
     font-weight: bold;
   }
+ .footer-logo{
+    float: right;
+    width: 205px;
+    height: 55px;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
   .footer-menu a {
     font-size: 18px;
     color: #ffffff;
@@ -295,13 +303,6 @@ h2.feature-title{
     border-radius: 2px;
     color:#2B7FB3;
   }
-  .footer-logo{
-      float: left;
-      width: 205px;
-      height: 55px;
-      margin-left: 50px;
-      margin-top: 20px;
-  } */
   
   
   .footer-menu a:active {
@@ -309,9 +310,11 @@ h2.feature-title{
   }
   
   .footer-social{
-    float: left;
-    width: 450px;
+    position:absolute;
     margin-left: 0;
+    left: -30px;
+    top: 200px;
+    display: block;
   }
   .footer-social b {
     font-size: 24px;
@@ -320,13 +323,9 @@ h2.feature-title{
   }
   
   .social-btn {
-    color: #ffffff;
-  }
-  .social-btn:hover {
-    color: #d1e9fd;
-  }
-  .social-btn:active {
-    color:  rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 0;
   }
   
   .footer-copyright {
@@ -382,33 +381,33 @@ h2.feature-title{
   margin-left: 55px;
 }
 
-.footer-social b {
+.footer-social  {
   margin-right: 40px;
   font-size: 24px;
 }
 .social-btn-li{
     display: inline-block; 
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
     vertical-align: middle;
     color: #ffffff;
     background-image: url("../img/li.png");
     background-repeat: no-repeat;
     background-size: 100%; 
-    margin-top:-30px;
+    margin-top:-10px;
   }  
 .social-btn-fb{
     display: inline-block; 
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
     vertical-align: middle;
     color: #ffffff;
     background-image: url("../img/fb.png");
     background-repeat: no-repeat;
     background-size: 100%; 
-    margin-top:-30px;
+    margin-top:-10px;
   }  
   .social-btn-fb:hover{
     background:  url("../img/fb1.png"); 
